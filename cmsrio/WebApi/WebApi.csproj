@@ -115,12 +115,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Modelo\Modelo.csproj">
-      <Project>{560f00a5-5ea0-41fb-b22e-132977734076}</Project>
-      <Name>Modelo</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
