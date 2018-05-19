@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="Data Source=cmsriodbserver.database.windows.net;&#xD;&#xA;         Initial Catalog=cmsrio_db;&#xD;&#xA;         Integrated Security=False;&#xD;&#xA;         User ID=admroot;&#xD;&#xA;         Password=********;&#xD;&#xA;         Connect Timeout=60;&#xD;&#xA;         Encrypt=True;&#xD;&#xA;         TrustServerCertificate=False;&#xD;&#xA;         ApplicationIntent=ReadWrite;&#xD;&#xA;         MultiSubnetFailover=False" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\cx750\\Desktop\\projeto-cmsrio\\cmsrio\\WebApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
