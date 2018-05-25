@@ -32,10 +32,9 @@ namespace WebApi
                 defaults: new { id = RouteParameter.Optional }
             );
 
+            config.EnableCors();
 
 
-            var cors = new EnableCorsAttribute("http://cmsrio.azurewebsites.net", "*", "*");
-            config.EnableCors(cors);
         }
     }
 }

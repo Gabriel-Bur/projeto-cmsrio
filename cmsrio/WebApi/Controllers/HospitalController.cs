@@ -15,7 +15,7 @@ using WebApi.Models;
 
 namespace WebApi.Controllers
 {
-    [EnableCors(origins:"http://cmsrio.azurewebsites.net/api/Hospital",headers:"*",methods:"*")]
+    [EnableCors(origins:"*",headers:"*",methods:"*")]
     public class HospitalController : ApiController
     {
         private ContextDB db = new ContextDB();
