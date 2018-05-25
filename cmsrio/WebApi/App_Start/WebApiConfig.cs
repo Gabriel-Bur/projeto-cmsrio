@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Formatting;
+using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
@@ -15,6 +17,15 @@ namespace WebApi
             // Rotas da API da Web
             config.MapHttpAttributeRoutes();
 
+
+
+            config.Formatters.JsonFormatter.MediaTypeMappings.Add(new QueryStringMapping(
+                "type", "json", new MediaTypeHeaderValue("application/json")));
+
+
+
+
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
@@ -23,8 +34,8 @@ namespace WebApi
 
 
 
-            var cors = new EnableCorsAttribute("http://http://cmsrio.azurewebsites.net", "*", "*");
-
+            var cors = new EnableCorsAttribute("http://cmsrio.azurewebsites.net", "*", "*");
+            config.EnableCors(cors);
         }
     }
 }
