@@ -19,9 +19,9 @@ namespace WebApi.Controllers
         private ContextDB db = new ContextDB();
 
         // GET: api/Hospital
-        public IQueryable<Hospital> GetHospitais()
+        public IList<Hospital> GetHospitais()
         {
-            return db.Hospitais;
+            return db.Hospitais.ToList();
         }
 
         // GET: api/Hospital/5

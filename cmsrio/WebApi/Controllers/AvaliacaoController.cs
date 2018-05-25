@@ -19,9 +19,9 @@ namespace WebApi.Controllers
         private ContextDB db = new ContextDB();
 
         // GET: api/Avaliacao
-        public IQueryable<Avaliacao> GetAvaliacoes()
+        public IList<Avaliacao> GetAvaliacoes()
         {
-            return db.Avaliacoes;
+            return db.Avaliacoes.ToList();
         }
 
         // GET: api/Avaliacao/5

@@ -4,7 +4,7 @@
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\cx750\\Desktop\\projeto-cmsrio\\cmsrio\\WebApi\\obj\\Release\\Package\\PackageTmp$" />
     <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\cx750\\Desktop\\projeto-cmsrio\\cmsrio\\WebApi\\obj\\Release\\Package\\PackageTmp$" />
   </parameter>
-  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=(localdb)\MSSQLLocalDB; &#xD;&#xA;         Integrated Security=True; &#xD;&#xA;         MultipleActiveResultSets=True;&#xD;&#xA;         AttachDbFilename=|DataDirectory|MyDatabaseContext.mdf" tags="">
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:cmsriodbserver.database.windows.net,1433;Initial Catalog=cmsrio_db;User Id=admroot@cmsriodbserver;Password=CMSRIOp@ssw0rd" tags="">
     <parameterEntry kind="XmlFile" scope="C:\\Users\\cx750\\Desktop\\projeto-cmsrio\\cmsrio\\WebApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
 </parameters>
