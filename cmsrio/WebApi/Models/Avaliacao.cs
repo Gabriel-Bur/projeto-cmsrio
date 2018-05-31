@@ -21,7 +21,7 @@ namespace WebApi.Models
         public string Email { get; set; }
 
 
-        public string Topico { get; set; }
+        public string Assunto { get; set; }
 
 
         public string Comentario { get; set; }

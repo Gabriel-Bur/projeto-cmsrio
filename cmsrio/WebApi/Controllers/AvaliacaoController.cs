@@ -28,13 +28,14 @@ namespace WebApi.Controllers
         [ResponseType(typeof(Avaliacao))]
         public async Task<IHttpActionResult> GetAvaliacao(int id)
         {
-            Avaliacao avaliacao = await db.Avaliacoes.FindAsync(id);
-            if (avaliacao == null)
+            List<Avaliacao> avaliacoes = await db.Avaliacoes.Where(b => b.IDHospital == id).ToListAsync();
+
+            if (avaliacoes == null)
             {
                 return NotFound();
             }
 
-            return Ok(avaliacao);
+            return Ok(avaliacoes);
         }
 
         // PUT: api/Avaliacao/5
