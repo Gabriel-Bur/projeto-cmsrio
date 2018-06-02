@@ -3,7 +3,7 @@
 ## Web Api .NET
 
 # URL
-cmsrio.azurewebsites.net
+https://cmsrio.azurewebsites.net/
 
 # Method:
 |GET|
