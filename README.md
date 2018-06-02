@@ -2,18 +2,18 @@
 
 Web Api .NET
 
-#URL
+# URL
 /api/Hospital
 
-#Method:
+# Method:
 |GET|
 
-#URL Params
+# URL Params
 Optional:
 /api/Hospital/{id}
 
 
-#Type:
+# Type:
 XML
 /api/Hospital
 
