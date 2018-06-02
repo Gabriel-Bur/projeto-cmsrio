@@ -1,9 +1,9 @@
 # projeto-cmsrio
 
-Web Api .NET
+##Web Api .NET
 
 # URL
-/api/Hospital
+cmsrio.azurewebsites.net
 
 # Method:
 |GET|
